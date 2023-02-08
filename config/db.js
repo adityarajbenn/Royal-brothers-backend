@@ -1,8 +1,10 @@
 const mongoose = require("mongoose");
-require("dotenv").config();
+// require("dotenv").config();
+
+mongoose.set('strictQuery', false);
 
 const Connect = async () => {
-  await mongoose.connect(process.env.mongodb);
+  await mongoose.connect('mongodb+srv://adityarajbenn:royalbrother@cluster0.yg2eort.mongodb.net/?retryWrites=true&w=majority');
 
 
 
